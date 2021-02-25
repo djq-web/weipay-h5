@@ -1,0 +1,295 @@
+.select_container {
+  height: 100%;
+}
+
+.chengduPage {
+  background: #f4f4fb;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 88px;
+  display: flex;
+  flex-direction: column;
+  .pageHeader {
+    text-align: left;
+    font-size: 24px;
+    color: #fff;
+    background: #00a661;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .left_img {
+      width: 130px;
+      height: 130px;
+      background: url("../../assets/image/payItemLogo.png") no-repeat;
+      background-size: cover;
+      margin: 0 44px;
+    }
+
+    .right_content {
+      flex: 1;
+      text-align: left;
+      position: relative;
+
+      .select_top_name {
+        font-size: 38px;
+        line-height: 44px;
+        margin-bottom: 16px;
+        font-weight: 600;
+      }
+
+      .line_info {
+        font-size: 28px;
+        line-height: 44px;
+        margin-bottom: 8px;
+      }
+
+      .switching_btn {
+        position: absolute;
+        right: 40px;
+        top: -4px;
+        padding: 10px 16px;
+        border-radius: 10px;
+        line-height: 30px;
+        font-size: 28px;
+        background: #00a661;
+        color: #fff;
+        border: 1px solid #fff;
+        z-index: 100;
+      }
+    }
+  }
+
+  .page_scroll_content {
+    flex: 1;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    .banSelectContainer {
+      text-align: left;
+
+      .am-list-header {
+        padding: 20px 0px 20px 30px;
+        font-size: 28px;
+        color: #666;
+      }
+
+      .am-list-body {
+        padding-left: 4vw;
+        align-items: center;
+
+        &::after {
+          display: none;
+        }
+
+        .am-list-item {
+          min-height: 5.33333vw;
+          padding: 2.13333vw 0;
+        }
+
+        .am-list-thumb {
+          width: 5.6vw;
+          height: 5.6vw;
+          margin-right: 0.53333vw;
+
+          .am-checkbox-inner {
+            left: 0;
+            width: 4vw;
+            height: 4vw;
+            top: 4.8vw;
+
+            &::after {
+              width: 0.93333vw;
+              height: 1.86667vw;
+              right: 1.2vw;
+              top: 0.4vw;
+            }
+          }
+
+          .am-checkbox-checked {
+            .am-checkbox-inner {
+              border-color: #33b881;
+              background: #33b881;
+            }
+          }
+        }
+
+        .am-list-line {
+          position: relative;
+
+          &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background: #d3d3d3;
+            transform: scaleY(0.5);
+          }
+
+          .am-list-content {
+            font-size: 30px;
+            padding: 14px 0;
+            color: #333333;
+
+            div {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding-right: 15px;
+              font-style: normal;
+
+              .payItemName {
+                flex: 1;
+                color: #00a661;
+              }
+              .greyBtn{
+                color: #999 !important;
+              }
+              em {
+                font-style: normal;
+                padding-left: 8px;
+              }
+
+              .explain {
+                font-size: 24px;
+                display: inline-block;
+              }
+            }
+
+            .remakeWords {
+              margin-top: 6px;
+              font-size: 24px;
+              color: #999999;
+              word-break: break-all;
+              white-space: pre-wrap;
+            }
+
+            .defray_text {
+              margin: 6px 0;
+              font-size: 28px;
+
+              .payment_num {
+                color: #fe9758;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .all_money {
+      line-height: 50px;
+      padding: 28px;
+      font-weight: 600;
+      font-size: 32px;
+      color: #fe9758;
+      background: #fff;
+      text-align: right;
+
+      .symbool {
+        font-style: normal;
+        font-size: 28px;
+        margin-right: 10px;
+        margin-left: 20px;
+      }
+
+      .acount {
+        font-style: normal;
+        font-size: 32px;
+      }
+    }
+
+    .green_btn {
+      margin: 50px 45px 40px;
+      background: #00a661;
+      border-radius: 50px;
+      font-size: 32px;
+      color: #fff;
+      line-height: 100px;
+      height: 100px;
+      text-align: center;
+    }
+
+    .historyBtn {
+      font-size: 32px;
+      color: #00a661;
+    }
+  }
+  .payment_status {
+    position: absolute;
+    right: 30px;
+    bottom: 120px;
+    width: 120px;
+    height: 120px;
+    background: #ffffff;
+    border-radius: 50%;
+    z-index: 100;
+    box-shadow: 0 0 16px 0 rgba(89, 191, 131,0.55);
+    .payment_icon {
+      display: block;
+      width: 50px;
+      height: 50px;
+      margin: 16px auto 6px;
+    }
+    .pending{
+      color: #00a661;
+      font-size: 22px;
+    }
+    .numTip {
+      position: absolute;
+      color: white;
+      font-size: 24px;
+      background-color: red;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      left: 70%;
+      top: -10px;
+      text-align: center;
+      border-radius: 35px;
+    }
+  }
+  .pay-empty {
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .pay-empty-icon-wrapper {
+      .pay-empty-icon {
+        width: 478px;
+        height: 328px;
+        background: url("../../assets/image/img_blank_project@2x.png") no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+      }
+
+      .pay-empty-text {
+        font-size: 28px;
+        text-align: center;
+        color: #999999;
+        margin: 52px 0 100px;
+      }
+    }
+
+    .pay-history-btn {
+      font-size: 4.8vw;
+      height: 12.53333vw;
+      line-height: 12.53333vw;
+      margin: 0 4vw;
+      background: #00a661;
+      color: #fff;
+      border-radius: 1vw;
+      text-align: center;
+    }
+  }
+}

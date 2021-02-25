@@ -1,0 +1,152 @@
+.schoolPopup{
+  min-height: 100vh;
+  &.hidePopup{
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    background:#fff; 
+    left: 100%; 
+    top:0px; 
+    z-index: 999; 
+    transition: all .4s;
+  }
+  &.showPopup{
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    background:#fff; 
+    left: 0; 
+    top:0px; 
+    z-index: 999; 
+    transition: all .5s;
+  }
+  .popupContainer{
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    position: relative;
+    .popupHeader{
+      width: 100%;
+      height: 92px;
+      display: flex;
+      align-items: center;
+      .back_icon{
+        width:100px;
+        height: 100px;
+        background: url('../../assets/image/icon_left.png') no-repeat center center;
+        background-size: 50px 50px;
+      }
+      .header_title{
+        font-size:32px;
+        color: #000;
+        text-align: left; 
+      }
+    }
+    .popupSech{
+      padding: 0 20px;
+      background: #fff;
+      height: 92px;
+      border: 1px solid #ededed;
+      margin: 0 20px;
+      .am-search-input{
+        background: #fff;
+        height: 56px;
+        .am-search-value{
+          height: 56px;
+          line-height: 56px;
+          color: #000;
+          font-size: 30px;
+          padding: 0 24px 0 48px;
+        }
+        .am-search-clear{
+          width: 28px;
+          height: 28px;
+          background-size: 28px 28px;
+          top: 8px;
+        }
+        .am-search-synthetic-ph-container{
+          line-height: 56px;
+          .am-search-synthetic-ph-icon{
+             width: 30px;
+             height: 30px;
+             background-size: 30px 30px;
+             position: relative;
+             top: 4px;
+          }
+          .am-search-synthetic-ph-placeholder{
+            font-size: 30px;
+          }
+        }
+      }
+      .am-search-cancel{
+        color: #3b74ff;
+        font-size: 32px;
+        margin: 0 5px;
+      }
+    }
+    .areaListBox{
+      margin-top: 40px;
+      padding: 0 30px 30px;
+      background: #F9FBFC;
+      .area_title{
+        text-align: left;
+        padding: 30px 0;
+        font-size: 24px;
+        color: #333333;
+        line-height: 28px;
+      }
+      .area_list{
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        span{
+          width: 30%;
+          height: 60px;
+          line-height: 60px;
+          border: 1px solid #EDEDED;
+          border-radius: 4px;
+          background: #fff;
+          margin-bottom: 40px;
+          display: inline-block;
+          text-align: center;
+          font-size: 28px;
+          &.onSelect{
+            background: #F4F4FB;
+          }
+        }
+      }
+    }
+    .schoolContent{
+      margin-top: 40px;
+      .content_title{
+        height: 88px;
+        background: #F9FBFC;
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        padding-left: 36px;
+        color: #333333;
+        font-weight: 600;
+        .allRera{
+          padding-right: 30px;
+          background: url('../../assets/image/tra_icon.png') right center no-repeat;
+          background-size: 14px 20px;
+          color: #69B0FE;
+          margin-right: 16px;
+        }
+      }
+      .area_list{
+        padding-left: 36px;
+        .area_list_item{
+          line-height: 40px;
+          font-size: 28px; 
+          padding: 24px 0 24px 36px;
+          background: url('../../assets/image/icon_building.png') left center no-repeat;
+          background-size: 24px 24px; 
+          color: #646A73;
+        }
+      }
+    }
+  }
+}

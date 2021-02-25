@@ -1,0 +1,262 @@
+.payInfoPage{
+  position: relative;
+}
+.payment_information{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  .payment_container{
+      width: 100%;
+      flex:1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+  }
+  .payment_tips{
+      height: 8vw;
+      line-height: 8vw;
+      background: rgba(250,176,55,.15);
+      width: 100%;
+      font-size: 26px;
+      color: #f4a21d;
+      z-index: 100;
+      text-align: center;
+    }
+    .payment_top{
+        padding: 60px 0;
+        text-align: center;
+        background: #ffffff;
+        margin-bottom: 20px;
+        .payment_title{
+            font-size: 28px;
+            color: #333333;
+            line-height: 40px;
+        }
+        .payment_amount{
+            font-size: 52px;
+            color: #4272EE;
+            line-height: 100px;
+            &.redFont{
+                color: #BA0C00;
+            }
+            .number{
+                font-size: 72px;
+                font-weight: 600;
+                font-style: normal;
+            }
+        }
+    }
+      .payment_info_list{
+          padding: 0 4vw 4vw;
+          box-sizing: border-box;
+          flex: 1;
+          overflow-y: scroll;
+          -webkit-overflow-scrolling: touch;
+          background: #ffffff;
+          .payment_item_li{
+              display: flex;
+              justify-content: space-between;
+              font-size: 30px;
+              line-height: 42px;
+              color: #333333;
+              padding: 28px 0;
+              position: relative;
+              .payment_label{
+                  color: #666666;
+                  width: 34%;
+              }
+              .payment_name{
+                  width: 65%;
+                  text-align: right;
+                  white-space: pre-wrap;
+                  word-break: break-all;
+              }
+          }
+      }
+  .payment_footer{
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: 4vw 0 4vw 4vw; 
+      box-sizing: border-box;
+      .ensure_msg{
+        margin-bottom: 2.66667vw;
+        .am-checkbox-wrapper{
+            display: flex;
+            align-items: center;
+            .am-checkbox{
+              width: 4vw;
+              height: 4vw;
+              &.am-checkbox-checked{
+                  .am-checkbox-inner{
+                      border-color: #3b74ff;
+                      background: #3b74ff;
+                      &::after{
+                          width: 1.2vw;
+                          height: 2vw;
+                          top: 0;
+                          right: 1.2vw;   
+                      }
+                  }
+              }
+              .am-checkbox-inner{
+                  width: 4vw;
+                  height: 4vw;
+                  border-color: #605f5f;
+              }
+            }
+        }
+        &.redBox{
+            .am-checkbox-wrapper{
+                .am-checkbox{
+                  &.am-checkbox-checked{
+                      .am-checkbox-inner{
+                          border-color: #BA0C00;
+                          background: #BA0C00;
+                      }
+                  }
+                }
+            }
+        }
+       .msg_cont{
+           margin-left: 2vw;
+           font-size: 3.2vw;
+           color: #333;
+           .font_red{
+              font-size: 3.46667vw;
+              color: #de2244;
+           }
+        }
+      }
+      .payment_btn_box{
+          padding-right: 4vw;
+          .payment_btn{
+              display: block;
+              outline: none;
+              border: none;
+              width: 100%;
+              background: #3b74ff;
+              border-radius: .53333vw;
+              font-size: 4.26667vw;
+              color: #fff;
+              line-height: 11.73333vw;
+              &.disable_btn{
+                  opacity: 0.5;
+              }
+              &.redBtn{
+                  background: #BA0C00;
+              }
+          }
+          .batch_pay{
+            margin-top: 24px;
+            font-size: 28px;
+            color: #3B74FF;
+          }
+      }
+  }
+  .alipay-options{
+      margin-top: 2.66667vw;
+      background: #fff;
+      position: relative;
+      overflow: hidden;
+      .opt-header{
+          display: flex;
+          .huabei-logo{
+              width: 14.66667vw;
+              .huabeiIcon{
+                  margin: 3.2vw 4vw;
+                  width: 6.66667vw;
+                  height: 6.66667vw;
+              }
+          }
+          .opt-header-text{
+              flex: 1;
+              text-align: left;
+              line-height: 12.8vw;
+              font-size: 3.73333vw;
+              color: #333;
+              letter-spacing: .34px;
+              box-sizing: border-box;
+              border-bottom: 1px solid #e4e4e4;
+              .important{
+                  background: #ff3e3e;
+                  border-radius: .72vw;
+                  display: inline-block;
+                  width: 7.73333vw;
+                  height: 4.53333vw;
+                  text-align: center;
+                  line-height: 4.53333vw;
+                  font-size: 2.66667vw;
+                  color: #fff;
+                  top: -0.6vw;
+                  position: relative;
+              }
+          }
+      }
+      .periodization{
+          padding-left: 14.66667vw;
+          .bystages_item{
+              display: flex;
+              align-items: center;
+              padding-right: 4vw;
+              color: #000;
+              font-size: 4.53333vw;
+              .bystages_item_text{
+                  flex: 1;
+                  padding: 3.33vw 0;
+                  .service_charge{
+                      color: #888;
+                      font-size: 4vw;
+                      line-height: 1.5;
+                      margin-top: 1.6vw;
+                  }
+              }
+              .am-list-item {
+                  min-height: 11.73333vw;
+                  .am-list-thumb{
+                      &:first-child{
+                          margin: 0;
+                      }
+                      .am-checkbox{
+                          width: 5.6vw;
+                          height: 5.6vw;
+                          &.am-checkbox-checked{
+                              .am-checkbox-inner{
+                                  border-color: #3b74ff;
+                                  background: #3b74ff;
+                                  &::after{
+                                      top: 0.4vw;
+                                      width: 1.33vw;
+                                      height: 2.93vw;
+                                  }
+                              }
+                          }
+                          .am-checkbox-inner{
+                              width: 5.6vw;
+                              height: 5.6vw;  
+                          }
+                      }
+                  }
+              }
+          }
+          .oneTime-pay-wrapper{
+              position: relative;
+              height: 12.4vw;
+              display: flex;
+              align-items: center;
+              .alipayIcon{
+                  position: absolute;
+                  left: -10.5vw;
+                  top: 2.8vw;
+                  width: 6.66667vw;
+                  height: 6.66667vw;
+                  z-index: 100;       
+              }
+          }
+      }
+  }
+}

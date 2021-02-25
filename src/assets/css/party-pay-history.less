@@ -1,0 +1,56 @@
+.party_history_list{
+  position: relative;
+  .list_data_container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    .data_content{
+      padding: 0;
+      .consume-date{
+          height: 100px;
+          font-size: 26px;
+          color: #999999;
+          padding: 0 30px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+      .item_box{
+        padding: 0 30px;
+        background: #fff;
+        .list_item{
+          display: flex;
+          height: 168px;
+          padding: 40px 0;
+          box-sizing: border-box;
+          .item_details{
+            flex: 1;
+            .item_name{
+              font-size: 30px;
+             color: #333333;
+             line-height: 42px;
+             margin-bottom: 12px;
+             font-weight: 600;
+            }
+            .pay_time{
+              font-size: 24px;
+              color: #999999;
+              line-height: 34px;
+            }
+          }
+          .item_money{
+            font-size: 30px;
+            color: #333333;
+            line-height: 42px;
+            margin-left: 20px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

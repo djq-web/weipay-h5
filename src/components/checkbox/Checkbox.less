@@ -1,0 +1,24 @@
+@import "../theme/loader";
+.swift_checkbox{
+    &.round{
+        .am-checkbox-inner{
+            &:after{top:2 * @hd;right:6 * @hd;}
+        }
+    }
+    &.square{
+        .am-checkbox{width:18 * @hd;height:18 * @hd;}
+        .am-checkbox-inner{
+            width:18 * @hd;height:18 * @hd;border-radius:0;
+            &:after{top:0;right:5 * @hd;}
+        }
+    }
+}
+
+/*这个是专门用来和list配合用的 checkbox*/
+.swift_checkbox_item{
+    &.round{
+        .am-checkbox-inner{
+            &:after{top:2 * @hd;right:6 * @hd;}
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.batchPayPage{
+  padding: 30px;
+  box-sizing: border-box;
+  height: 100%;
+  background: #fff;
+  .progress_bar{
+    margin-top: 40px;
+    width: 100%;
+    height: 16px;
+    border-radius: 8px;
+    background: #F5F5F5;
+    .current_progress{
+      height: 16px;
+      border-radius: 8px;
+      transition: width 2s;
+      background: #3b74ff;
+      position: relative;
+      &.greenProgress{
+        background: #00a661;
+      }
+      .percentage{
+        position: absolute;
+        right: -26px;
+        top: -40px;
+        font-size: 28px;
+        color: #999999;
+      }
+    }
+  }
+  .explain{
+    overflow: hidden;
+    .pay_li{
+      margin-top: 20px;
+      font-size: 28px;
+      color: #333333;
+      line-height: 40px;
+      .li_value{
+      margin-top: 8px;
+      &.totalVal{
+        color: #DE2244;
+      }
+      }
+    }
+    .pay_left{
+      float: left;
+    }
+    .pay_right{
+      float: right;
+    }
+  }
+  .box_input{
+    margin-top: 38px;
+    width: 100%;
+    height: 88px;
+    border: 1px solid #3B74FF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    color: #333333;
+    &.green_input{
+      border-color: #00a661;
+    }
+    .symbool{
+     position: relative;
+     top: 4px;
+    }
+    .money_input{
+      flex:1;
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      &::-webkit-input-placeholder{
+        color: #999999;
+        font-size: 28px;
+      }
+    }
+  }
+  .surplus{
+    font-size: 28px;
+    margin-top: 20px;
+    color: #333333;
+    line-height: 40px;
+    text-align: center;
+    .remainder_money{
+      color: #DE2244;
+    }
+  }
+  .sure_btn{
+    background: #3B74FF;
+    border-radius: 4px;
+    height: 88px;
+    line-height: 88px;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 80px;
+    &.sure_green_btn{
+      background: #00a661;
+      border-radius: 44px;
+    }
+  }
+}

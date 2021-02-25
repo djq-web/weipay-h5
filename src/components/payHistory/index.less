@@ -1,0 +1,172 @@
+.pay_list_page{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  .page_header{
+    display: flex;
+    padding: 3.2vw 4vw;
+    justify-content: space-between;
+    align-items: center;
+    .page_title{
+      font-size: 3.2vw;
+      color: #999;
+      line-height: 4.53333vw;
+    }
+    .page_title_history{
+      color: #333;
+      font-size: 4.26667vw;
+      background: url('../../assets/image/icon_left.png') left center no-repeat;
+      background-size: 40px 40px;
+      padding-left: 40px;
+    }
+    .invoice_btn{
+      font-size: 3.73333vw;
+      width: 21.06667vw;
+      height: 6.4vw;
+      line-height: 6.4vw;
+      border: 1px solid #3b74ff;
+      border-radius: .53333vw;
+      color: #3b74ff;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .green_btn{
+      box-sizing: border-box;
+      font-size: 3.73333vw;
+      width: 21.06667vw;
+      height: 6.4vw;
+      line-height: 6.4vw;
+      border: 1px solid #00a661;
+      border-radius: .53333vw;
+      color: #00a661;
+      text-align: center;
+    }
+  }
+  .history_lit{
+    .list_item{
+      background-color: #ffffff;
+      .flex_box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 3.2vw 4vw 3.2vw 0;
+        margin-left: 4vw;
+        &.payli_item{
+          padding: 4vw;
+        }
+        &.noBottomLine{
+          &::before{
+            content: "";
+            position: absolute;
+            background: #EAEAEA;
+            display: block;
+            z-index: 1;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 2px;
+            transform-origin: 50% 100%;
+            transform: scaleY(.5);
+          }
+        }
+      }
+      .item_left{
+        flex: 1;
+        .first_line{
+          font-size: 3.73333vw;
+          color: #333;
+          line-height: 5.33333vw;
+          margin-bottom: 0.8vw;
+        }
+        .channel_line{
+          font-size: 3.73333vw;
+          color: #333;
+          line-height: 5.33333vw;
+          margin-bottom: 1.86667vw;
+        }
+        .second_line{
+          font-size: 3.2vw;
+          color: #999;
+          line-height: 3.73333vw;
+        }
+        .totalMoney{
+          font-size: 24px;
+          line-height: 34px;
+          margin-top: 8px;
+          color: #333333;
+        }
+      }
+      .item_right{
+        width: 24vw;
+        font-size: 4.26667vw;
+        color: #000;
+        text-align: right;
+        .new_line{
+          margin-top: 0.8vw;
+        }
+        .voucher_btn{
+          font-size: 24px;
+          color: #3B74FF;
+        }
+        .payStatusName{
+          font-size: 24px;
+          color: #999;
+        }
+      }
+      .pay_content{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 28px;
+          padding: 2vw 4vw;
+          color: #3B74FF;
+          &.pay_content_green{
+            color: #00a661;
+          }
+          .beingPay{
+            color: #333;
+            .num{
+              color: #DE2244;
+            }
+          }
+          .continue_pay{
+            width: 214px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background: #3B74FF;
+            border-radius: 4px;
+            color: #ffffff;
+            &.continue_pay_green{
+              background: #00a661;
+            }
+          }
+          .refunding{
+            flex: 1;
+            text-align: right;
+          }
+      }
+      .grayLine{
+        width: 100%;
+        height: 20px;
+        background: #F7F7F9;
+      }
+
+    }
+  }
+  .noDataTips{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 160px;
+    color: #999999;
+    .emptyIMg{
+      width: 478px;
+      height: 330px;
+      background: url('../../assets/image/img_blank_records@2x.png') no-repeat;
+      background-size: cover;
+      margin: 10px auto 56px;
+    }
+  }
+}

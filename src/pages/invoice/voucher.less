@@ -1,0 +1,181 @@
+
+.voucher_page{
+   font-size: 12px;
+   position: relative;
+  .payment_voucher_container{
+    padding: 10px 5px 32px;
+    background: #ffffff;
+    overflow: hidden;
+    .payment_title{
+      width: 160px;
+      margin: 27px auto ;
+      font-size: 22px;
+      color: #FF3B1E;
+      text-align: center;
+      line-height: 30px;
+      padding-bottom: 4px;
+      border-bottom: 4px double #FF3B1E;
+    }
+    .red_text{
+      color: #FF3B1E;
+    }
+    .blue_text{
+      color: #4378FA;
+    }
+    .main_content{
+      padding: 0 36px;
+      .voucher_herader{
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .left_content{
+          word-break: break-all;
+          margin-left: 10px;
+        }
+      }
+      .tabel_content{
+          height: auto;
+          overflow: hidden;
+          border: 1px solid #979797;
+          position: relative;
+          li{
+            display: flex;
+            .line_lable{
+               width: 75px;
+               text-align: center;
+               border-right: 1px solid #979797;
+            }
+            .line_content{
+              padding-left: 20px;
+            }
+          }
+          .first_line{
+            height: 38px;
+            line-height: 38px;
+            border-bottom: 1px solid #979797;
+            box-sizing: border-box;
+            .base_message_content{
+                 flex: 1;
+            }
+          }
+          .second_line{
+            align-items: center;
+            border-bottom: 1px solid #979797;
+            .payment_list_title{
+              border: none;
+            }
+            .right_payment{
+              padding: 12px 0 44px 20px;
+              border-left: 1px solid #979797;
+              flex: 1;
+              position: relative;
+              .item_list_box{
+                color: #4378FA;
+                margin-right: 70px;
+                margin-bottom: 8px;
+                height: 16px;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                .line-through{
+                  position: absolute;
+                  width: 100%;
+                  height: 2px;
+                  top: 7px;
+                  left: 0;
+                  background: #979797;
+                  transform: scaleY(0.5);
+                }
+              }
+              .refund_picture{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 167px;
+                height: 103px;
+                background: url('../../assets/image/refund_icon.png') no-repeat;
+                background-size: cover;
+               }
+            }
+          }
+          .third_line{
+            height: 35px;
+            line-height: 35px;
+            border-bottom: 1px solid #979797;
+            box-sizing: border-box;
+            .total_money_capitalize{
+              width: 67%;
+              height: 35px;
+              border-right: 1px solid #979797;
+              padding-left: 14px;
+              box-sizing: border-box;
+            }
+          }
+          .fourth_line{
+                height: 30px;
+                line-height: 30px;
+                border-bottom: 1px solid #979797;
+                box-sizing: border-box;
+          }
+          .fifth_line{
+            height: 30px;
+            line-height: 30px;
+            .payment_method_name{
+              flex: 1;
+              padding-left: 20px;
+              border-right: 1px solid #979797;
+            }
+            .flex_auto_box{
+              width: 33%;
+              display: flex;
+              .pay_status_name{
+                width: 50%;
+                text-align: center;
+              }
+              .pay_status_success{
+                border-left: 1px solid #979797;
+                width: 50%;
+                text-align: center;
+              }
+            }
+          }
+          .payment_logo{
+            width: 138px;
+            height: 138px;
+            position: absolute;
+            right: 18px;
+            bottom: 18px;
+            background: url('../../assets/image/payment_logo.png') no-repeat;
+            background-size: cover;
+          }
+      }
+      .table_footer{
+        text-align: right;
+        margin-top: 10px;
+        .right{
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .download_line{
+    width: 100%;
+    height: 88px;
+    line-height: 88px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #3b74ff;
+    text-align: center;
+    .download_btn{
+      color: #ffffff;
+      font-size: 24px;
+      width: 100%;
+      display: inline-block;
+      height: 88px;
+    }
+  }
+}

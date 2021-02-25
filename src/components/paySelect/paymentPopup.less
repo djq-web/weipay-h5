@@ -1,0 +1,126 @@
+.select_list_container{
+  max-height: 40vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 4vw;
+  .select_list_item{
+    display: flex;
+    align-items: center;
+    padding-right: 1vw;
+    .am-list-item{
+      border: none;
+      padding-left: 0;
+      overflow: initial;
+      min-height: 100px;
+      .am-list-thumb{
+        width: 5.6vw;
+        height: 5.6vw;
+        .am-checkbox{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 11.73vw;
+          &.am-checkbox-checked{
+            .am-checkbox-inner{
+              border-color: #3b74ff;
+              background: #3b74ff;
+            }
+          }
+          .am-checkbox-inner{
+            width: 4.4vw;
+            height: 4.4vw;
+            left: 0;
+            top: 1vw;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            &::after{
+              top: 0.1vw;
+              right: 1.1vw;
+              width: 1.05vw;
+              height: 2.4vw;
+            }
+          }
+        }
+      }
+      &.redColor {
+        .am-list-thumb{
+          .am-checkbox{
+            &.am-checkbox-checked{
+              .am-checkbox-inner{
+                border-color: #BA0C00;
+                background: #BA0C00;
+              }
+            }
+          }
+        }
+      }
+    }
+    .flex_right{
+      display: flex;
+      color: #333333;
+      flex: 1;
+      justify-content: space-between;
+      font-size: 30px;
+      position: relative;
+      align-items: center;
+      min-height: 100px;
+      .payItem_name{
+        flex: 1;
+        display: block;
+        word-break: break-word;
+        white-space: pre-wrap;
+        text-align: left;
+      }
+      .pay_money{
+        width: 130px;
+        text-align: right;
+      }
+      .flex_input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        overflow: hidden;
+        .money_input{
+          flex: 1;
+          overflow: hidden;
+          display: block;
+          height: 5.8vw;
+          padding-right: 1.01vw;
+          text-align: right;
+          font-size: 3.2vw;
+          color: #333333;
+        }
+      }
+    }
+  }
+}
+.sure_btn{
+  margin: 70px 30px 24px;
+  height: 88px;
+  line-height: 88px;
+  border-radius: 6px;
+  font-size: 36px;
+  color: #FFFFFF;
+  background: #3b74ff;
+  &.green_sure_btn{
+    background: #00a661;
+  }
+  &.redBtn{
+    background: #BA0C00;
+  }
+}
+.self_support_btn{
+  margin: 0 30px 30px;
+  height: 88px;
+  line-height: 88px;
+  border-radius: 6px;
+  font-size: 36px;
+  color: #333333;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+}

@@ -1,0 +1,85 @@
+@import "../theme/loader";
+@circle_wrap_small:14 * @hd;
+@circle_size_small:6 * @hd;
+
+@circle_wrap_medium:20 * @hd;
+@circle_size_medium:9 * @hd;
+
+@circle_wrap_large:32 * @hd;
+@circle_size_large:14 * @hd;
+
+.swift_loading_wrap{
+    position:relative;display:inline-block;
+    .swift_loading_outer.none{display:none;}
+    &.nested{display:block;}
+    &.nested .swift_loading_outer{
+        position:absolute;left:0;top:0;right:0;bottom:0;z-index:2;
+        display: -webkit-box;-webkit-box-align: center;-webkit-box-pack:center;
+    }
+    .swift_loading_swiftpass{
+        &.medium{transform:scale(0.6)}
+    }
+    .swift_loading_swiftpass_wrap{
+        background:rgba(0,0,0,0.7);padding:32* @hd 15 * @hd;border-radius:5PX;
+        &.medium{transform:scale(0.6)}
+    }
+    .swift_loading_swiftpass_path{
+        stroke:@swift_spin_color;
+        stroke-width:1px;fill:none;
+        stroke-dasharray: 248 * @hd; stroke-dashoffset: 0;
+        animation:animate_progress 1.6s ease-in-out infinite;
+        animation-direction:alternate;
+    }
+
+    .swift_loading_circle{
+        &.small{width:@circle_wrap_small;height:@circle_wrap_small;}
+        &.small li{width:@circle_size_small;height:@circle_size_small;}
+
+        &.medium{width:@circle_wrap_medium;height:@circle_wrap_medium;}
+        &.medium li{width:@circle_size_medium;height:@circle_size_medium;}
+
+        &.large{width:@circle_wrap_large;height:@circle_wrap_large;}
+        &.large li{width:@circle_size_large;height:@circle_size_large;}
+
+        position:relative;display:inline-block;transform:rotate(45deg);
+        animation:circleRotate 1.2s infinite linear;
+
+        li{
+            border-radius:100%;background-color:@swift_primary_color;
+            opacity:0.3;transform:scale(0.75);
+            position:absolute;transform-origin: 50% 50%;
+            animation:circleOpacity 1s infinite linear alternate;
+            &:nth-child(1){left:0;top:0;}
+            &:nth-child(2){right:0;top:0;animation-delay:0.4s;}
+            &:nth-child(3){right:0;bottom:0;animation-delay:0.8s;}
+            &:nth-child(4){left:0;bottom:0;animation-delay:1.2s;}
+        }
+    }
+
+    .swift_loading_container{
+        position:relative;
+        height: 100%;
+        width: 100%;
+        &.show{
+            overflow:hidden; transform:translateZ(0);opacity:0.5;
+            &.blur{
+                -webkit-filter:blur(0.7px);filter:blur(0.7px);
+            }
+        }
+
+
+
+    }
+}
+
+@keyframes circleRotate {
+  100%{transform:rotate(405deg)}
+}
+
+@keyframes circleOpacity{
+    100%{opacity:1}
+}
+
+@keyframes animate_progress {
+    100%{stroke-dashoffset:248 * @hd;}
+}

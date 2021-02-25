@@ -1,0 +1,128 @@
+/*开票列表页*/
+.invoice_history{
+  min-height: 100vh;
+  .list_wrap{
+    padding-bottom: 20px;
+    &:last-child{
+        padding-bottom:60px;
+    }
+  }
+  .white_box{
+    background: #fff;
+    padding: 26px 36px 16px 30px;
+    .row{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      font-size: 28px;
+      color: #333333;
+      line-height: 34px;
+      .small_gray{
+          font-size: 24px;
+          color: #999999;
+          &.sl{
+              width: 384px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+          }
+      }
+      .kp_time{
+        font-weight: 650;
+        position: relative;
+        padding-left: 44px;
+        &:before{
+            content:'';
+            position: absolute;
+            width:24px;
+            height: 24px;
+            background: url('../../assets/image/time.png') no-repeat center center;
+            background-size: 100% 100%;
+            top:50%;
+            margin-top: -12px;
+            left: 0;
+        }
+      }
+      .fp_money{
+        font-size: 32px;
+        color: #333333;
+      }
+      .kp_status{
+          font-size: 28px;
+          color: #999999;
+          flex:1;
+          text-align: right;
+          position: relative;
+          &.blue{
+              color:#3B74FF;
+          }
+          &.red{
+              color:#DE2244;
+          }
+          span{
+              display: inline-block;
+              width:10.6px;
+              height:18.6px;
+              background: url('../../assets/image/tra_icon.png') no-repeat center center;
+              background-size: 100% 100%;
+              margin-left:15px;
+          }
+        }
+      }
+    }
+  .fp_non_data{
+      text-align: center;
+      background: #fff;
+      min-height: 100vh;
+      font-size: 28px;
+      color: #999999;
+      overflow: hidden;
+      .nodata_icon{
+          display: block;
+          width: 148px;
+          height: 146px;
+          background: url('../../assets/image/non_fp.png') no-repeat center center;
+          background-size: 100% 100%;
+          margin: 270px auto 70px;
+      }
+    }
+}
+
+/**开票中提醒页**/
+.invoice_pending{
+  text-align: center;
+  background: #fff;
+  min-height: 100vh;
+  .cont{
+      padding-top: 130px;
+  }
+  .invoicing_icon{
+    display: inline-block;
+    width:162px;
+    height:158px;
+    background: url('../../assets/image/invoicing.png') no-repeat center center;
+    background-size: 100% 100%;
+  }
+  .submit_title{
+    font-size: 34px;
+    color: #333333;
+    font-weight:650;
+    margin: 60px 0 40px 0;
+  }
+  .gray_tip{
+    font-size: 28px;
+    color: #BBBBBB;
+    margin-bottom: 80px;
+  }
+  .complete_btn{
+      width: 688px;
+      height: 86px;
+      line-height: 86px;
+      border: 1px solid #3B74FF;
+      border-radius: 4px;
+      font-size: 34px;
+      color: #3B74FF;
+      margin: 40px auto 0 auto;
+  }
+}

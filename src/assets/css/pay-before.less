@@ -1,0 +1,317 @@
+.pay_form_page{
+  position: relative;
+}
+.payBeforePage{
+  background: #f4f4fb;
+}
+.page_main_content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  .flexContent{
+    width: 100%;
+    flex: 1;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .footer_logo_box{
+    width: 394px;
+    height: 54px;
+    margin: 40px auto 24px;
+    background: url('../../assets/image/greyBankLogo.png') no-repeat;
+    background-size: cover;
+  }
+  .pay_befor_banner{
+     width: 100%;
+     height: 320px;
+     &.school_banner{
+       background: url('../image/banner_school@3x.png') no-repeat;
+       background-size: cover;
+     }
+     &.property_banner{
+      background: url('../image/banner_property@3x.png') no-repeat;
+      background-size: cover;
+     }
+     &.otherMch_banner{
+      background: url('../image/banner_other@3x.png') no-repeat;
+      background-size: cover;
+     }
+  }
+  .content_title{
+    height: 80px;
+    color: #999;
+    line-height: 80px;
+    font-size: 24px;
+    padding-left: 30px;
+  }
+  .specily_title{
+    margin: 0 30px;
+    height: 88px;
+    color: #333;
+    font-size: 4.26667vw;
+    line-height: 90px;
+    background: url('../image/icon_left.png') left center no-repeat;
+    background-size: 40px 40px;
+    padding-left: 40px;
+  }
+  .topLine{
+    margin-top:2.66667vw;
+  }
+  .form_container{
+    margin-bottom: 30px;
+  }
+  .pay_input_tips{
+    font-size: 3.2vw;
+    color: #999;
+    line-height: 4.53333vw;
+    text-align: left;
+    padding: 0 4vw; 
+  }
+  .am-list-item{
+    min-height: 88px;
+    padding-left: 30px;
+    &.hasContent {
+      .am-list-extra{
+        color: #333;
+      }
+    }
+    &.individuation{
+      .am-list-line{
+        .am-input-control{
+          input{
+           color: #00a661;
+          }
+        } 
+      }
+    }
+    .am-list-line{
+      padding-right: 30px;
+      overflow: visible;
+      .am-input-label{
+        font-size: 28px;
+        color: #333;
+        width: 170px;
+        margin-right: 1.33333vw;
+        padding: .53333vw 0;
+        margin-top: 2px;
+        position: relative;
+        overflow: visible;
+      }
+      .required_symbol{
+        font-size: 3.73333vw;
+        color: #de2244;
+        position: absolute;
+        left: -2vw;
+        top: 50%;
+        display: block;
+        width: 3.73333vw;
+        height: 3.73333vw;
+        margin-top: -1.86667vw;
+      }
+      .am-list-content{
+        font-size: 3.73333vw;
+        color: #333;
+        width: 22.66667vw;
+        margin-right: 1.33333vw;
+        flex: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-top: 1.86667vw;
+        padding-bottom: 1.86667vw;
+      }
+      .am-list-extra{
+        width: 62vw;
+        text-align: left;
+        font-size: 3.73333vw;
+        white-space: pre-wrap;
+        padding-top: 1.86667vw;
+        padding-bottom: 1.86667vw;
+      }
+      .am-list-arrow{
+        width: 4vw;
+        height: 4vw;
+        margin-left: 2.13333vw;
+      }
+      .am-input-control{
+        input{
+          font-size: 28px;
+          color: #333;
+          padding: 4px 0;
+        }
+        input::-webkit-input-placeholder{ 
+          font-size: 28px;
+          color: #999;
+        }
+      }
+    }
+    &.mediumSzie{
+      .am-list-line{
+        .am-input-control{
+          input{
+           font-weight: 600;
+          }
+        } 
+      }
+    }
+  }
+  .go_pay_btn{
+    margin: 50px 30px;
+    height: 88px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 88px;
+    color: #fff;
+    border-radius: 8px;
+    background: #3b74ff;
+    &.redBtn{
+      background: #BA0C00;
+    }
+  }
+  .individuation_btn{
+    height: 11.73333vw;
+    line-height: 11.73333vw;
+    text-align: center;
+    border-radius: 5.86667vw;
+    font-size: 4.26667vw;
+    color: #fff;
+    margin: 6.66667vw ;
+    background-color: #00a661;
+  }
+  .form_tips{
+    font-size: 24px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .selfPaybtn{
+    margin: 20px 30px;
+    box-sizing: border-box;
+    height: 88px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 88px;
+    color: #333333;
+    border-radius: 8px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+  }
+  .propaganda_box{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 1.6vw;
+    .banner_img{
+      display: block;
+      width: 100%;
+      height: 36vw;
+      margin: 0 auto;
+    }
+  }
+  .pageBanner{
+    width: 100%;
+    height: 320px;
+    background: url('../image/banner_party_dues@2x.png') center no-repeat;
+    background-size: cover;
+  }
+  .partyInput{
+    .am-input-control{
+      input{
+        font-weight: 600;
+      }
+    }
+  }
+}
+.house_list{
+  padding: 0 30px;
+  margin-bottom: 30px;
+  max-height: 800px;
+  overflow-y: auto;
+  .house_item{
+    font-size: 30px;
+    color: #333;
+    text-align: left;
+    .house_name{
+      display: flex;
+      align-items: center;
+      height: 100px;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      box-sizing: border-box;
+      .flex_left_name{
+        flex: 1;
+        word-break: break-all; 
+      }
+      .foldBtn{
+        display: block;
+        width: 100px;
+        height: 100px;
+        background: url('../image/ic_arrow_drop_down@3x.png') right center no-repeat;
+        background-size: 28px 28px;
+      }
+      .unfoldBtn{
+        background: url('../image/ic_arrow_pack_up@3x.png') right center no-repeat;
+        background-size: 28px 28px;
+      }
+    }
+    .child_list_item{
+      margin-left: 30px;
+      height: 100px;
+      line-height: 100px;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+}
+.select-list{
+  max-height: 500px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  .select-list-li{
+    background: #FFFFFF;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    font-size: 36px;
+    color: #333333;
+  }
+  .boderBottomLine{
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      background: #ddd;
+      display: block;
+      z-index: 1;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 1px;
+      transform-origin: 50% 100%;
+      transform: scaleY(.5);
+    }
+    &:last-child{
+      &::before{
+        display: none;
+      }
+    }
+  }
+}
+.cancle_btn{
+  background: #F5F5F5;
+  width: 100%;
+  padding-top: 16px;
+  .cancle_p{
+    width: 100%;
+    line-height: 100px;
+    height: 100px;
+    font-size: 36px;
+    color: #333333;
+    background: #fff;
+  }
+}
